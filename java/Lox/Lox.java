@@ -1,4 +1,4 @@
-package com.craftinginterpreters.lox;
+package Lox;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -29,6 +29,7 @@ public class Lox
         }
         else 
         {
+            System.out.print("Running Prompt!");
             runPrompt(); // interactively run Lox code
         }
     }

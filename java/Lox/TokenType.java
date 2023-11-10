@@ -1,4 +1,4 @@
-package lox;
+package Lox;
 
 /*
  * From my understanding: Tokes are reserved symbols/strings that when broken down into lexemes (the building blocks of a line of code)

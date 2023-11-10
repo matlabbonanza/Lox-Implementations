@@ -1,4 +1,4 @@
-package lox;
+package Lox;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -57,7 +57,7 @@ class Scanner {
         }
 
         // Final token, to signify that the scanner succesfully reached the end of the source.
-        tokens.Add(new Token(TokenType.EOF, "", null, line));
+        tokens.add(new Token(TokenType.EOF, "", null, line));
         return tokens;
     }
 
