@@ -5,7 +5,7 @@ default: jlox
 # Remove all build outputs and intermediate files.
 clean:
 	@ ECHO Cleaning!
-	@ rd /s /q "$(BUILD_DIR)""
+	@ rm "$(BUILD_DIR)" -r
 
 # Compile and run the AST generator.
 generate_ast:

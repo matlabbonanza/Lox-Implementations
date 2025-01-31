@@ -14,7 +14,9 @@ default: $(CLASSES)
 
 # Compile a single .java file to .class.
 $(BUILD_DIR)/$(DIR)/%.class: $(DIR)/%.java
-	@ if not exist ".\$(BUILD_DIR)\$(DIR)" mkdir .\$(BUILD_DIR)\$(DIR)
+#ifeq ('$(wildcard $(BUILD_DIR)\$(DIR))', '')
+#	mkdir $(BUILD_DIR)\$(DIR)
+#endif
 	@ javac -cp $(DIR) -d $(BUILD_DIR)\$(DIR) $(JAVA_OPTIONS) -implicit:none $<
-
+	
 .PHONY: default
